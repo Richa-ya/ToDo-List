@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <title>to do list</title>
+    <script
+      src="https://kit.fontawesome.com/2f7beac886.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>TO-DO LIST</h1>
+      <form>
+        <input type="text" placeholder="Type Your ToDo List" class="input" />
+        <button type="submit" class="add">
+          <span><i class="fas fa-plus-circle"></i> </span>
+        </button>
+      </form>
+      <div class="task2">
+        <i class="fas fa-check-double"></i>
+        <span class="task"> Add Items To Your List</span>
+        <!-- <span> Complete All Tasks</span> -->
+      </div>
+      <!-- <div class="item"></div> -->
+      <div class="add-items">
+        <!-- <li>Go to meeting</li> -->
+      </div>
+
+      <div class="double">
+        <span class="task-left">
+          You Have &nbsp;<span id="left"> </span> Task Left</span
+        >
+
+         <div class="second2">
+          <button
+            type="button"
+            class="second color"
+            id="one"
+            
+             onclick="showitems(event)"
+            value="All-Items"
+          >
+            All-Items
+           
+          </button>
+          <button
+            type="button"
+            class="second"
+            id="two"
+            onclick="history(event)"
+            value="History"
+          >
+            History
+          </button>  
+          <button
+            type="button"
+            class="second"
+            id="three"
+              onclick="deleteAll(event)" 
+            value="Delete All"
+          > 
+       
+         Delete All <i class="fas fa-trash"></i>
+
+      </button>
+        
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
